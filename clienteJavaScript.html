@@ -1,0 +1,59 @@
+<!--
+Cliente HTML
+Rev: 0.5
+Fecha: 11/12/2017
+Autores: Alejandro Moya Moya
+		 Jorge Valero Molina
+		 Francisco Martinez Esteso
+		 Miguel Ángel Cantero Víllora
+UCLM - Escuela Superior de Ingeniería Informática Albacete
+Sistemas Multiagentes 17/18
+-->
+
+<!DOCTYPE html>
+<meta charset="US-ASCII">
+<html>
+    <head>
+        <title>Cliente JavaScript - Tiendar.io</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <!-- Imports necesarios para hacer funcionar clienteJavaScript.js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="clienteJavaScript.js"></script>
+    </head>
+    <body style="   background-image: url('https://image.freepik.com/free-vector/online-shopping-background-design_1200-217.jpg'); 
+                    background-repeat:no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-color: #fdd35a">
+        <div class="container-fluid">
+            <p>
+                <h1 class="display-4"><strong>Cliente JavaScript - Tiendar.io</strong></h1></p>
+            <p>
+                <form class="form-inline" id="formulario" accept-charset=utf-8 style="margin-top:40px">
+                    <input type="string" value="clanjhoo.com:1880" class="form-control mb-2 mr-sm-2 mb-sm-0" id="MonitorInput" placeholder="Escribe la URL del monitor">
+                    <div class="btn-group" role="group" aria-label="Group">
+                        <button id="submit" type="submit" class="btn btn-primary" onclick="main(); return false;">OK!</button>
+                        <button id="submit" type="submit" class="btn btn-danger" onclick="stop(); return false;">STOP!</button>
+                    </div>
+                </form>
+            </p>
+            <p>
+                <table id="tablalog" class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Log</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </p>
+        </div>
+    </body>
+</html>
